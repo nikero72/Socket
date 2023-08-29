@@ -21,7 +21,6 @@
 
         // Если ответ - закрытие соединения, закрываем сокет
         if (($response == 'Close connection' . PHP_EOL) || $response == 'Close socket' . PHP_EOL) {
-            echo $response;
             socket_close($socket);
             break;
         }
